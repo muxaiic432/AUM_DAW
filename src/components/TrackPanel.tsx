@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plus, Volume2, VolumeX, Headphones, Settings } from 'lucide-react';
+import { Plus, Volume2, VolumeX, Headphones, Settings, Music } from 'lucide-react';
 import { useProject } from '../contexts/ProjectContext';
 import { Track } from '../types';
 
