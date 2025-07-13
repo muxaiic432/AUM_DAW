@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-daw-darker text-white font-sans;
+  }
+}
+
+@layer components {
+  .track-channel {
+    @apply bg-daw-dark border border-gray-700 rounded-lg p-4 hover:border-daw-accent transition-colors;
+  }
+  
+  .control-knob {
+    @apply w-12 h-12 bg-gray-800 rounded-full border-2 border-gray-600 cursor-pointer hover:border-daw-accent transition-colors relative;
+  }
+  
+  .fader {
+    @apply w-6 h-32 bg-gray-800 rounded-full relative cursor-pointer;
+  }
+  
+  .chat-message {
+    @apply p-3 rounded-lg mb-2 max-w-xs;
+  }
+  
+  .chat-user {
+    @apply bg-daw-accent text-white ml-auto;
+  }
+  
+  .chat-ai {
+    @apply bg-gray-700 text-white mr-auto;
+  }
+  
+  .piano-key {
+    @apply cursor-pointer transition-colors duration-75;
+  }
+  
+  .piano-white {
+    @apply bg-white hover:bg-gray-100 border border-gray-300;
+  }
+  
+  .piano-black {
+    @apply bg-gray-900 hover:bg-gray-800 text-white;
+  }
+}
